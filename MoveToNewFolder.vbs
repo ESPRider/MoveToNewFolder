@@ -1,3 +1,7 @@
+' MoveToNewFolder - https://github.com/ESPRider/MoveToNewFolder
+' Created by ESPRider
+' Personal use only. Do not redistribute or repurpose commercially without attribution and license.
+
 Set shell = CreateObject("WScript.Shell")
 Set args = WScript.Arguments
 

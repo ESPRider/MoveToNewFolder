@@ -1,3 +1,7 @@
+:: MoveToNewFolder - https://github.com/ESPRider/MoveToNewFolder
+:: Created by ESPRider
+:: Personal use only. Do not redistribute or repurpose commercially without attribution and license.
+
 ::[Bat To Exe Converter]
 ::
 ::YAwzoRdxOk+EWAnk

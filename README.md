@@ -61,4 +61,7 @@ To uninstall:
 
 ## 📄 License
 
-MIT License – free to use, share, and adapt.
+Personal use only — free for non-commercial use with attribution.  
+Do not repurpose or redistribute commercially without explicit permission.  
+GitHub: https://github.com/ESPRider/MoveToNewFolder  
+© ESPRider

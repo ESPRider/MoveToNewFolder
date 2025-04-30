@@ -10,15 +10,15 @@ if (!(Test-Path -Path $InstallPath)) {
 }
 
 # Copy script files
-Copy-Item -Path "$PSScriptRoot\MoveToNewFolder1.ps1" -Destination "$InstallPath\MoveToNewFolder.ps1" -Force
-Copy-Item -Path "$PSScriptRoot\MoveToNewFolder1.bat" -Destination "$InstallPath\MoveToNewFolder.bat" -Force
-Copy-Item -Path "$PSScriptRoot\MoveToNewFolder.vbs" -Destination "$InstallPath\MoveToNewFolder.vbs" -Force
+Copy-Item -Path "$PSScriptRoot\MoveToNewFolder_withFavorites.ps1" -Destination "$InstallPath\MoveToNewFolder_withFavorites.ps1" -Force
+Copy-Item -Path "$PSScriptRoot\MoveToNewFolder_withFavorites.bat" -Destination "$InstallPath\MoveToNewFolder_withFavorites.bat" -Force
+Copy-Item -Path "$PSScriptRoot\MoveToNewFolder_withFavorites.vbs" -Destination "$InstallPath\MoveToNewFolder_withFavorites.vbs" -Force
 
 # Create SendTo shortcut to VBS
 $WshShell = New-Object -ComObject WScript.Shell
 $SendTo = [Environment]::GetFolderPath("SendTo")
-$Shortcut = $WshShell.CreateShortcut("$SendTo\Move to New Folder.lnk")
-$Shortcut.TargetPath = "$InstallPath\MoveToNewFolder.vbs"
+$Shortcut = $WshShell.CreateShortcut("$SendTo\Move to Folder with Favorites.lnk")
+$Shortcut.TargetPath = "$InstallPath\MoveToNewFolder_withFavorites.vbs"
 $Shortcut.IconLocation = "imageres.dll,3"  # Classic folder icon
 $Shortcut.Save()
 

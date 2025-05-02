@@ -45,10 +45,10 @@ The script will:
 ## 🛠 Components
 
 | File                         | Purpose                                     |
-|-----------------------------|---------------------------------------------|
-| `MoveToNewFolder1.ps1`      | The main PowerShell script that moves files |
-| `MoveToNewFolder1.bat`      | Simple launcher for the script              |
-| `MoveToNewFolder.vbs`       | Silent minimized launcher for Send To       |
+|-----------------------------|--------------------------------------------- |
+| `MoveToNewFolder.ps1`      | The main PowerShell script that moves files   |
+| `MoveToNewFolder.bat`      | Simple launcher for the script                |
+| `MoveToNewFolder.vbs`       | Silent minimized launcher for Send To        |
 | `Install_MoveToNewFolder.ps1` | Installs everything and adds the shortcut  |
 
 ---

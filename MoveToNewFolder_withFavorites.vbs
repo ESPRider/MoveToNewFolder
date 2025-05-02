@@ -1,7 +1,7 @@
 Set shell = CreateObject("WScript.Shell")
 Set args = WScript.Arguments
 
-batPath = "C:\Scripts\MoveToNewFolder\MoveToNewFolderWFavorites.bat"
+batPath = "C:\Scripts\MoveToNewFolder\MoveToNewFolder_withFavorites.bat"
 
 command = """" & batPath & """"
 For i = 0 To args.Count - 1

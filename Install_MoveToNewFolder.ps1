@@ -37,7 +37,7 @@ Copy-Item -Path "$source\MoveToNewFolder.bat" -Destination $targetDir -Force
 Copy-Item -Path "$source\MoveToNewFolder.vbs" -Destination $targetDir -Force
 
 # Copy shortcut to SendTo folder
-Copy-Item -Path "$source\Move with Favorites.lnk" -Destination $sendToDir -Force
+Copy-Item -Path "$source\Move to New Folder.lnk" -Destination $sendToDir -Force
 
 Write-Host "✅ MoveToNewFolder installed to $targetDir"
 Write-Host "✅ Shortcut added to SendTo menu"

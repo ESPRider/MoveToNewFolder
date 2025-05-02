@@ -32,9 +32,9 @@ if (-not (Test-Path $targetDir)) {
 
 # Copy all files from current folder to target
 $source = Split-Path -Parent $MyInvocation.MyCommand.Path
-Copy-Item -Path "$source\MoveToNewFolder_withFavorites.ps1" -Destination $targetDir -Force
-Copy-Item -Path "$source\MoveToNewFolderWFavorites.bat" -Destination $targetDir -Force
-Copy-Item -Path "$source\MoveToNewFolder_withFavorites.vbs" -Destination $targetDir -Force
+Copy-Item -Path "$source\MoveToNewFolder.ps1" -Destination $targetDir -Force
+Copy-Item -Path "$source\MoveToNewFolder.bat" -Destination $targetDir -Force
+Copy-Item -Path "$source\MoveToNewFolder.vbs" -Destination $targetDir -Force
 
 # Copy shortcut to SendTo folder
 Copy-Item -Path "$source\Move with Favorites.lnk" -Destination $sendToDir -Force

@@ -39,10 +39,6 @@ The script will:
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 
-> ✅ You can optionally change the installation path by running:
-> ```powershell
-> .\Install_MoveToNewFolder.ps1 -InstallPath "D:\Tools\MyFolderMover"
-> ```
 
 ---
 
@@ -67,7 +63,6 @@ To uninstall:
 
 ## 🧠 Notes
 
-- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---

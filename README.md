@@ -33,7 +33,7 @@ Works from anywhere in Windows Explorer
 
 1. **Download the [Installer Package(https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)]**  
 2. Extract the archive
-3. Right-click `CLICK_HERE_TO_INSTALL.bat`
+3. Double-click `CLICK_HERE_TO_INSTALL.bat`
 The script will:
 - Create `C:\Scripts\MoveToNewFolder\` by default
 - Copy all necessary files

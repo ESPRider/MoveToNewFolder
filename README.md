@@ -11,7 +11,7 @@ Skip the drag. Skip the copy. Just move your files directly with a right-click s
 - ✅ Moves all selected files into that folder (no overwrites unless confirmed)
 - 📦 Works with any file type
 - 🧾 Creates a log of all moved files
-- 🔇 Runs silently using a `.vbs` launcher (no black console window)
+- 🔇 Runs only when called
 
 
 🔥 What Makes It Appealing?

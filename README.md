@@ -31,7 +31,7 @@ Works from anywhere in Windows Explorer
 
 ## 📂 Installation
 
-1. **Download the [Installer Package](./MoveToNewFolder_Installer_V2.zip)**  
+1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/main.zip)**  
 2. Extract the archive
 3. Right-click `Install_MoveToNewFolder.ps1` → **Run with PowerShell**
 

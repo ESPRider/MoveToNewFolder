@@ -31,7 +31,7 @@ Works from anywhere in Windows Explorer
 
 ## 📂 Installation
 
-1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)**  
+1. **Download the [Installer Package(https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)]**  
 2. Extract the archive
 3. Right-click `CLICK_HERE_TO_INSTALL.bat`
 The script will:

@@ -64,7 +64,7 @@ To uninstall:
 
 ## 🧠 Notes
 
-- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
+- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher (Coming in future versions)
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---

@@ -105,4 +105,4 @@ By continuing to use the application, you accept these terms.
 If you’d like to support the project, donations are welcome:
 
 👉 [Donate via PayPal] https://www.paypal.com/ncp/payment/BPNXF8V8MHPFY  
-(This is completely optional. The app is and will remain free.)
+(This is completely optional. )

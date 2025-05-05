@@ -39,10 +39,6 @@ The script will:
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 
-> ✅ You can optionally change the installation path by running:
-> ```powershell
-> .\Install_MoveToNewFolder.ps1 -InstallPath "D:\Tools\MyFolderMover"
-> ```
 
 ---
 

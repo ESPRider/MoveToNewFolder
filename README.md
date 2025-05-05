@@ -33,13 +33,17 @@ Works from anywhere in Windows Explorer
 
 1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/main.zip)**  
 2. Extract the archive
-3. Double-Click `CLICK_HERE_TO_INSTALL.bat` 
+3. Right-click `Install_MoveToNewFolder.ps1` → **Run with PowerShell**
 
 The script will:
 - Create `C:\Scripts\MoveToNewFolder\` by default
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 
+> ✅ You can optionally change the installation path by running:
+> ```powershell
+> .\Install_MoveToNewFolder.ps1 -InstallPath "D:\Tools\MyFolderMover"
+> ```
 
 ---
 
@@ -64,7 +68,7 @@ To uninstall:
 
 ## 🧠 Notes
 
-- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher (Coming in future versions)
+- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---

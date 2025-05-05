@@ -35,7 +35,7 @@ Works from anywhere in Windows Explorer
 2. Extract the archive
 3. Right-click `CLICK_HERE_TO_INSTALL.bat`
 The script will:
-- Create `C:\Scripts\MoveToNewFolder\` by default
+- Create `C:\Scripts\MoveToNewFolderAdvanced\` by default
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 

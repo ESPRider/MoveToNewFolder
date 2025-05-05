@@ -42,28 +42,17 @@ The script will:
 
 ---
 
-## 🛠 Components
-
-| File                         | Purpose                                     |
-|-----------------------------|---------------------------------------------|
-| `MoveToNewFolder1.ps1`      | The main PowerShell script that moves files |
-| `MoveToNewFolder1.bat`      | Simple launcher for the script              |
-| `MoveToNewFolder.vbs`       | Silent minimized launcher for Send To       |
-| `Install_MoveToNewFolder.ps1` | Installs everything and adds the shortcut  |
-
----
-
 ## 🧹 Uninstall
 
 To uninstall:
-- Delete the folder: `C:\Scripts\MoveToNewFolder`
-- Remove the shortcut from: `shell:sendto`
-
+- Run the Uninstall bat file
+- OR
+- Delete the folder: C:\Scripts\MoveToNewFolder
+- Remove the shortcut by clicking CMD+R and type: shell:sendto then delete the shortcut and close the window.
 ---
 
 ## 🧠 Notes
 
-- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---

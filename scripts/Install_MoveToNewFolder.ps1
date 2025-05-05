@@ -1,5 +1,5 @@
 param (
-    [string]$InstallPath = "C:\Scripts\MoveToNewFolder"
+    [string]$InstallPath = "C:\Scripts\MoveToNewFolderAdvanced"
 )
 
 Write-Output "Installing to $InstallPath..."
@@ -17,7 +17,7 @@ Copy-Item -Path "$PSScriptRoot\MoveToNewFolder_withFavorites.vbs" -Destination "
 # Create SendTo shortcut to VBS
 $WshShell = New-Object -ComObject WScript.Shell
 $SendTo = [Environment]::GetFolderPath("SendTo")
-$Shortcut = $WshShell.CreateShortcut("$SendTo\Move to Folder with Favorites.lnk")
+$Shortcut = $WshShell.CreateShortcut("$SendTo\Move with Favorites.lnk")
 $Shortcut.TargetPath = "$InstallPath\MoveToNewFolder_withFavorites.vbs"
 $Shortcut.IconLocation = "imageres.dll,3"  # Classic folder icon
 $Shortcut.Save()

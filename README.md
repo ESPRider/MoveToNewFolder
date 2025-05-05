@@ -11,7 +11,7 @@ Skip the drag. Skip the copy. Just move your files directly with a right-click s
 - ✅ Moves all selected files into that folder (no overwrites unless confirmed)
 - 📦 Works with any file type
 - 🧾 Creates a log of all moved files
-- 🔇 Runs only when called
+- 🔇 Runs silently using a `.vbs` launcher (no black console window)
 
 
 🔥 What Makes It Appealing?
@@ -31,24 +31,28 @@ Works from anywhere in Windows Explorer
 
 ## 📂 Installation
 
-1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)**  
+1. **Download the [Installer Package(https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)]**  
 2. Extract the archive
-3. Double-click `CLICK_HERE_TO_INSTALL.bat`
+3. Right-click `CLICK_HERE_TO_INSTALL.bat`
 The script will:
 - Create `C:\Scripts\MoveToNewFolder\` by default
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 
+> ✅ You can optionally change the installation path by running:
+> ```powershell
+> .\Install_MoveToNewFolder.ps1 -InstallPath "D:\Tools\MyFolderMover"
+> ```
 
 ---
 
 ## 🛠 Components
 
 | File                         | Purpose                                     |
-|-----------------------------|--------------------------------------------- |
-| `MoveToNewFolder.ps1`      | The main PowerShell script that moves files   |
-| `MoveToNewFolder.bat`      | Simple launcher for the script                |
-| `MoveToNewFolder.vbs`       | Silent minimized launcher for Send To        |
+|-----------------------------|---------------------------------------------|
+| `MoveToNewFolder1.ps1`      | The main PowerShell script that moves files |
+| `MoveToNewFolder1.bat`      | Simple launcher for the script              |
+| `MoveToNewFolder.vbs`       | Silent minimized launcher for Send To       |
 | `Install_MoveToNewFolder.ps1` | Installs everything and adds the shortcut  |
 
 ---
@@ -63,6 +67,7 @@ To uninstall:
 
 ## 🧠 Notes
 
+- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---

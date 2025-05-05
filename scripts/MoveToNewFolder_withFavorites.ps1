@@ -1,10 +1,10 @@
 
 # MoveToNewFolder - v7_stable_plus
-# https://github.com/ESPRider/MoveToNewFolder
+# https://github.com/ESPRider/MoveToNewFolderAdvanced
 
 Add-Type -AssemblyName System.Windows.Forms
 
-$InstallPath = "C:\Scripts\MoveToNewFolder"
+$InstallPath = "C:\Scripts\MoveToNewFolderAdvanced"
 $LogPath = "$InstallPath\MoveToNewFolder.log"
 $FavoritesPath = "$InstallPath\favorites.txt"
 $LastUsedPath = "$InstallPath\lastused.txt"

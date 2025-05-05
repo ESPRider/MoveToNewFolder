@@ -1,4 +1,4 @@
-# Move to New Folder Utility 🗂️
+# Move to New Folder Utility with Advanced Features 🗂️
 
 A lightweight Windows tool to quickly move selected files into a new folder — right from the **Send To** menu or Explorer context menu.
 Skip the drag. Skip the copy. Just move your files directly with a right-click shortcut.
@@ -7,7 +7,7 @@ Skip the drag. Skip the copy. Just move your files directly with a right-click s
 ## ✨ Features
 
 - 🖱️ Right-click any file(s) → **Send To → Move to New Folder**
-- 📁 Choose the destination directory via folder picker
+- 📁 Choose the destination directory via folder picker or pick from favorites or last used
 - ✅ Moves all selected files into that folder (no overwrites unless confirmed)
 - 📦 Works with any file type
 - 🧾 Creates a log of all moved files

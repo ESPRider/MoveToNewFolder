@@ -6,12 +6,12 @@ Right click to move your files directly!
 
 ## ✨ Features
 
-- 🖱️ Right-click any file(s) → **Send To → Move to New Folder**
+- 🖱️ Right-click any file(s) → **Move to New Folder**
 - 📁 Choose the destination directory via folder picker
 - ✅ Moves all selected files into that folder (no overwrites unless confirmed)
 - 📦 Works with any file type
 - 🧾 Creates a log of all moved files
-- 🔇 Runs silently 
+- 🔇 Runs on-demand with no extra background processes 
 
 
 🔥 What Makes It Appealing?
@@ -24,7 +24,7 @@ Ideal for organizing downloads, photos, or work files
 Works from anywhere in Windows Explorer
 
 ✅ Quick Win Features to Highlight
-✅ Adds a custom "Move To Folder" in right-click > Send To
+✅ Adds a custom "Move To Folder" 
 ✅ Lightweight, portable, zero bloat
 ✅ Easy to configure or edit folders
 ---

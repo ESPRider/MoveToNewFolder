@@ -33,7 +33,7 @@ Works from anywhere in Windows Explorer
 
 1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/Advanced.zip)**  
 2. Extract the archive
-3. Right-click `CLICK_HERE_TO_INSTALL.bat`
+3. Right-click `CLICK_HERE_TO_INSTALL.bat` and Click "Run as Administrator"
 The script will:
 - Create `C:\Scripts\MoveToNewFolderAdvanced\` by default
 - Copy all necessary files
@@ -45,10 +45,11 @@ The script will:
 ## 🧹 Uninstall
 
 To uninstall:
-- Run the Uninstall bat file
+- Right-click the Uninstall bat file and Click "Run as Administrator"
 - OR
 - Delete the folder: C:\Scripts\MoveToNewFolderAdvanced
 - Remove the shortcut by clicking CMD+R and type: shell:sendto then delete the shortcut and close the window.
+- Run the Registry delete file as an admin. 
 ---
 
 ## 🧠 Notes

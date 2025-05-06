@@ -40,9 +40,11 @@ if ($deleteFolder -eq 'Yes' -and (Test-Path $installPath)) {
     try { Remove-Item $installPath -Recurse -Force } catch { $errors += "Folder: $_" }
 }
 
+
+
 # Result message
 if ($errors.Count -eq 0) {
-    [System.Windows.Forms.MessageBox]::Show("✅ Uninstall completed successfully.", "Done", "OK", "Info")
+    [System.Windows.Forms.MessageBox]::Show("Uninstall completed successfully.", "Done", "OK", "Info")
 } else {
-    [System.Windows.Forms.MessageBox]::Show("⚠ Uninstall completed with errors:`n`n" + ($errors -join "`n"), "Partial Uninstall", "OK", "Warning")
+    [System.Windows.Forms.MessageBox]::Show("Uninstall completed with errors:`n`n" + ($errors -join "`n"), "Partial Uninstall", "OK", "Warning")
 }

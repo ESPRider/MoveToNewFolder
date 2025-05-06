@@ -1,7 +1,7 @@
 # Move to New Folder Utility 🗂️
 
-A lightweight Windows tool to quickly move selected files into a new folder — right from the **Send To** menu or Explorer context menu.
-Skip the drag. Skip the copy. Just move your files directly with a right-click shortcut.
+A lightweight Windows tool to easily move files from the Explorer menu.
+Right click to move your files directly! 
 ---
 
 ## ✨ Features
@@ -11,7 +11,7 @@ Skip the drag. Skip the copy. Just move your files directly with a right-click s
 - ✅ Moves all selected files into that folder (no overwrites unless confirmed)
 - 📦 Works with any file type
 - 🧾 Creates a log of all moved files
-- 🔇 Runs silently using a `.vbs` launcher (no black console window)
+- 🔇 Runs silently 
 
 
 🔥 What Makes It Appealing?
@@ -33,27 +33,19 @@ Works from anywhere in Windows Explorer
 
 1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/main.zip)**  
 2. Extract the archive
-3. Right-click `Install_MoveToNewFolder.ps1` → **Run with PowerShell**
+3. Right-click CLICK_HERE_TO_INSTALL.bat file as an Administrator (Right Click and select 'Run as Administrator')
 
 The script will:
 - Create `C:\Scripts\MoveToNewFolder\` by default
 - Copy all necessary files
 - Add a **Send To** shortcut using a folder icon
 
-> ✅ You can optionally change the installation path by running:
-> ```powershell
-> .\Install_MoveToNewFolder.ps1 -InstallPath "D:\Tools\MyFolderMover"
-> ```
-
----
-
-
 ---
 
 ## 🧹 Uninstall
 
 To uninstall:
-- Run the Uninstall bat file
+- Run the Uninstall bat file as an Administrator (Right Click and select 'Run as Administrator')
 OR
 - Delete the folder: `C:\Scripts\MoveToNewFolder`
 - Remove the shortcut by clicking CMD+R and type: `shell:sendto` then delete the shortcut and close the window.
@@ -62,7 +54,6 @@ OR
 
 ## 🧠 Notes
 
-- This tool filters itself out — it will never try to move the `.vbs` or `.bat` launcher
 - File actions are logged to `MoveToNewFolder.log` in the install folder
 
 ---
@@ -115,4 +106,3 @@ By continuing to use the application, you accept these terms.
 If you’d like to support the project, donations are welcome:
 
 👉 [Donate via PayPal] https://www.paypal.com/ncp/payment/BPNXF8V8MHPFY  
-(This is completely optional. The app is and will remain free.)

@@ -8,7 +8,7 @@ $sendToDir = "$env:APPDATA\Microsoft\Windows\SendTo"
 
 # Check for PowerShell
 if (-not (Get-Command powershell -ErrorAction SilentlyContinue)) {
-    [System.Windows.Forms.MessageBox]::Show("❌ Please install PowerShell. https://github.com/PowerShell/PowerShell.")
+    [System.Windows.Forms.MessageBox]::Show(" Please install PowerShell. https://github.com/PowerShell/PowerShell.")
     exit
 }
 
@@ -16,11 +16,11 @@ if (-not (Get-Command powershell -ErrorAction SilentlyContinue)) {
 try {
     $netVersion = Get-ItemPropertyValue 'HKLM:\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full' Release -ErrorAction Stop
     if ($netVersion -lt 378389) {
-        [System.Windows.Forms.MessageBox]::Show("❌ .NET Framework 4.5 or newer is required. Please install it and try again. https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48")
+        [System.Windows.Forms.MessageBox]::Show(" .NET Framework 4.5 or newer is required. Please install it and try again. https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48")
         exit
     }
 } catch {
-    [System.Windows.Forms.MessageBox]::Show("❌ .NET Framework could not be verified. Please install version 4.5 or newer. https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48")
+    [System.Windows.Forms.MessageBox]::Show(" .NET Framework could not be verified. Please install version 4.5 or newer. https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48")
     exit
 }
 
@@ -39,6 +39,8 @@ Copy-Item -Path "$source\MoveToNewFolder.vbs" -Destination $targetDir -Force
 # Copy shortcut to SendTo folder
 Copy-Item -Path "$source\Move to New Folder.lnk" -Destination $sendToDir -Force
 
-Write-Host "✅ MoveToNewFolder installed to $targetDir"
-Write-Host "✅ Shortcut added to SendTo menu"
+
+
+Write-Host "MoveToNewFolder installed to $targetDir"
+Write-Host "Shortcut added to SendTo menu"
 pause

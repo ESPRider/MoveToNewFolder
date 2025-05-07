@@ -1,5 +1,5 @@
 
-# MoveToNewFolder - v7_stable_plus
+# MoveToNewFolder - v1.3_stable_plus
 # https://github.com/ESPRider/MoveToNewFolderAdvanced
 
 Add-Type -AssemblyName System.Windows.Forms
@@ -186,6 +186,19 @@ $linkLog.Add_Click({
     else { [System.Windows.Forms.MessageBox]::Show("No log file found.") }
 })
 $form.Controls.Add($linkLog)
+
+$versionLabel = New-Object System.Windows.Forms.Label
+$versionLabel.Text = "ESP Move To Folder - Version 1.3 Advanced"
+$versionLabel.AutoSize = $true
+$versionLabel.Anchor = "Bottom, Right"
+$versionLabel.Left = $form.ClientSize.Width - 300
+$versionLabel.Top = $form.ClientSize.Height - 40
+$form.Controls.Add($versionLabel)
+$form.Add_Resize({
+    $versionLabel.Left = $form.ClientSize.Width - $versionLabel.PreferredWidth - 10
+    $versionLabel.Top = $form.ClientSize.Height - $versionLabel.PreferredHeight - 10
+})
+
 
 $form.Add_Shown({ $form.Activate() })
 [void]$form.ShowDialog()

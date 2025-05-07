@@ -55,6 +55,7 @@ $favBox.SelectionMode = "One"
 $favBox.Items.AddRange($favorites)
 $form.Controls.Add($favBox)
 
+
 $delFavBtn = New-Object System.Windows.Forms.Button
 $delFavBtn.Text = "Remove Favorite"
 $delFavBtn.Width = 130
@@ -70,6 +71,42 @@ $delFavBtn.Add_Click({
     }
 })
 $form.Controls.Add($delFavBtn)
+
+$addFavBtn = New-Object System.Windows.Forms.Button
+$addFavBtn.Text = "Add to Favorites"
+$addFavBtn.Width = 130
+$addFavBtn.Top = 200
+$addFavBtn.Left = 150
+$addFavBtn.Add_Click({
+    $currentPath = $pathBox.Text.Trim()
+    if (-not $currentPath -or -not (Test-Path $currentPath)) {
+        [System.Windows.Forms.MessageBox]::Show("Please enter or browse a valid path first.", "Invalid Path", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Warning)
+        return
+    }
+
+    # Reload from file to ensure no memory/file desync
+    $favorites = @()
+    if (Test-Path $FavoritesPath) {
+        $favorites = Get-Content $FavoritesPath | Where-Object { $_ -ne "" }
+    }
+
+    if ($favorites -contains $currentPath) {
+        [System.Windows.Forms.MessageBox]::Show("This path is already in your favorites.", "Duplicate", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        return
+    }
+
+    # Add to file and re-read full list, ensuring uniqueness
+    Add-Content -Path $FavoritesPath -Value $currentPath
+    $favorites += $currentPath
+    $favorites = $favorites | Sort-Object -Unique
+    Set-Content -Path $FavoritesPath -Value $favorites
+
+    # Refresh list visually
+    $favBox.Items.Clear()
+    $favBox.Items.AddRange($favorites)
+    [System.Windows.Forms.MessageBox]::Show("Path added to favorites.", "Success", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+})
+$form.Controls.Add($addFavBtn)
 
 $labelPath = New-Object System.Windows.Forms.Label
 $labelPath.Text = "Selected path:"
@@ -188,7 +225,7 @@ $linkLog.Add_Click({
 $form.Controls.Add($linkLog)
 
 $versionLabel = New-Object System.Windows.Forms.Label
-$versionLabel.Text = "ESP Move To Folder - Version 1.3 Advanced"
+$versionLabel.Text = "ESP Move To Folder - Version 1.31 Advanced"
 $versionLabel.AutoSize = $true
 $versionLabel.Anchor = "Bottom, Right"
 $versionLabel.Left = $form.ClientSize.Width - 300

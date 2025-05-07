@@ -33,7 +33,7 @@ Works from anywhere in Windows Explorer
 
 1. **Download the [Installer Package](https://github.com/ESPRider/MoveToNewFolder/archive/refs/heads/main.zip)**  
 2. Extract the archive
-3. Right-click CLICK_HERE_TO_INSTALL.bat file as an Administrator (Right Click and select 'Run as Administrator')
+3. Right-click **CLICK_HERE_TO_INSTALL.bat** file as an Administrator **(Right Click and select 'Run as Administrator')**
 
 The script will:
 - Create `C:\Scripts\MoveToNewFolder\` by default
@@ -45,8 +45,8 @@ The script will:
 ## 🧹 Uninstall
 
 To uninstall:
-- Run the Uninstall bat file as an Administrator (Right Click and select 'Run as Administrator')
-OR
+- Run the Uninstall bat file as an Administrator (Right Click and select **'Run as Administrator'**)
+-      OR
 - Delete the folder: `C:\Scripts\MoveToNewFolder`
 - Remove the shortcut by clicking CMD+R and type: `shell:sendto` then delete the shortcut and close the window.
 

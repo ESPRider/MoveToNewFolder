@@ -1,4 +1,4 @@
 Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\*\shell\movetofolderadvanced]
-[-HKEY_CLASSES_ROOT\Directory\shell\MoveToNewFolder]
+[-HKEY_CLASSES_ROOT\Directory\shell\MoveToNewFolderAdvanced]

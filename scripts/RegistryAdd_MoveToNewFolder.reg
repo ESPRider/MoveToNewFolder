@@ -7,11 +7,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\*\shell\movetofolder\command]
 @="wscript.exe \"C:\\Scripts\\MoveToNewFolder\\MoveToNewFolder.vbs\" \"%1\""
 
-[HKEY_CLASSES_ROOT\Directory\shell\MoveToNewFolder]
+[HKEY_CLASSES_ROOT\Directory\shell\movetofolder]
 @="Move with Favorites"
 "Icon"="C:\\Windows\\System32\\shell32.dll,3"
 
-[HKEY_CLASSES_ROOT\Directory\shell\MoveToNewFolderAdvanced\command]
-@="wscript.exe \"C:\\Scripts\\MoveToNewFolderAdvanced\\MoveToNewFolder_withFavorites.vbs\" \"%1\""
+[HKEY_CLASSES_ROOT\Directory\shell\movetofolder\command]
+@="wscript.exe \"C:\\Scripts\\MoveToNewFolder\\MoveToNewFolder.vbs\" \"%1\""
 
 

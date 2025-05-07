@@ -43,7 +43,7 @@ The script will:
 ## 🧹 Uninstall
 
 To uninstall:
-- Right-click the Uninstall bat file and Click ** "Run as Administrator"**
+- Right-click the Uninstall bat file and Click **"Run as Administrator"**
 - OR
 - Delete the folder: C:\Scripts\MoveToNewFolderAdvanced
 - Remove the shortcut by clicking CMD+R and type: shell:sendto then delete the shortcut and close the window.
